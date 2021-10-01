@@ -1,0 +1,49 @@
+.bg-dark{
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+  
+  .mySwiper{
+    margin: 15px 15px 10px 15px;
+    text-align: left;
+    display: flex;
+    background-color: rgba(59, 59, 59, 0.507);
+    border: 1px solid rgba(59, 59, 59, 0.507);
+    border-radius: 15px;
+  }
+
+  .navbar-brand{
+    font-family: Aladin;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: left;
+
+  }
+
+  .nav-link{
+    font-size: 18px;
+    font-weight:500;
+
+    text-align: left;
+  }
+
+  .nav-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .navbar-toggler{
+    font-size: 15px;
+  }
+
+  .searchbar{
+    margin-left: 25px;
+    height: 35px;
+    margin-top: 6px;
+    background-color: rgba(163, 163, 163, 0.089);
+  }
+  .searchbutton{
+    color: white;
+    font-size: 15px;
+    background-color: rgba(163, 163, 163, 0.089);
+  }
+  

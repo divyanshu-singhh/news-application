@@ -1,0 +1,28 @@
+.card{
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 4px rgb(160, 155, 155);
+}
+
+.headlines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+a{
+    margin: 7px;
+}
+.cardFooter{
+    font-weight: lighter;
+    font-size: 13px;
+    text-align: left;
+}
+span{
+    margin: 7px;
+}
+.title {
+    color: black;
+    text-decoration: none!important;
+}
