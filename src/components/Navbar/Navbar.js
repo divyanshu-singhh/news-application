@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-// import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
-import Swiper from "./Swiper"
+import {Swiper} from "./Swiper"
 function Navbar({ parentCallback }) {
     const [searchData, setSearchData] = useState("");
 

@@ -3,14 +3,19 @@
   margin-bottom: 25px;
 }
   
-  .mySwiper{
+  .slider{
     margin: 15px 15px 10px 15px;
     text-align: left;
     display: flex;
     background-color: rgba(59, 59, 59, 0.507);
     border: 1px solid rgba(59, 59, 59, 0.507);
     border-radius: 15px;
+    overflow-x: scroll;
   }
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
 
   .navbar-brand{
     font-family: Aladin;
@@ -46,4 +51,10 @@
     font-size: 15px;
     background-color: rgba(163, 163, 163, 0.089);
   }
+  @media screen and (min-width: 870px) {
+    .mr{
+      margin-right: 70px;
+    }
+  }
+
   
