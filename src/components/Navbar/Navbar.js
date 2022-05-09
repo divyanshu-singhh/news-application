@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
 import Swiper from "./Swiper"
@@ -27,11 +27,11 @@ function Navbar({ parentCallback }) {
 
 
                         <div className="searchinput d-flex">
-                        <input className="searchbar form-control" type="search" placeholder="Search" aria-label="Search" onChange={e => setSearchData(e.target.value)} />
-                        <div onClick={finalSearchData}>
-                            <Link button className="searchbutton btn btn-outline-dark" to="/search">Search</Link>
+                            <input className="searchbar form-control" type="search" placeholder="Search" aria-label="Search" onChange={e => setSearchData(e.target.value)} />
+                            <div onClick={finalSearchData}>
+                                <Link button className="searchbutton btn btn-outline-dark" to="/search">Search</Link>
+                            </div>
                         </div>
-                    </div>
 
 
 
