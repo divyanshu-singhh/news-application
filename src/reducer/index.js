@@ -8,6 +8,15 @@ export const MyReducer = (state, action) => {
 
             }
             return res;
+
+            case 'SUCCESS   ':
+                var res = {
+                    ...state, ...{
+                        success:action.success
+                    }
+    
+                }
+                return res;
     }
 }
 export default MyReducer;
