@@ -1,16 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import App from '../../App'
 import "./Navbar.css"
 import {Swiper} from "./Swiper"
-function Navbar({ parentCallback }) {
+function Navbar() {
     const [searchData, setSearchData] = useState("");
-
-    const finalSearchData = (event) => {
-        event.preventDefault();
-        parentCallback(searchData);
-    }
-
-
 
     return (
         <>
@@ -27,9 +21,9 @@ function Navbar({ parentCallback }) {
 
                         <div className="searchinput d-flex">
                             <input className="searchbar form-control" type="search" placeholder="Search" aria-label="Search" onChange={e => setSearchData(e.target.value)} />
-                            <div onClick={finalSearchData}>
-                                <Link button className="searchbutton btn btn-outline-dark" to="/search">Search</Link>
-                            </div>
+                            {/* <div onClick={FinalSearchData}> */}
+                                <Link button className="searchbutton btn btn-outline-dark" to={`/search/${searchData}`}>Search</Link>
+                            {/* </div> */}
                         </div>
 
 
