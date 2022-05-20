@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import newsActionCreator from '../News/newsActionCreator'
+import { myStore } from '../../store/myStore'
 import { Link } from 'react-router-dom'
-import App from '../../App'
 import "./Navbar.css"
 import {Swiper} from "./Swiper"
 function Navbar() {
@@ -21,9 +22,10 @@ function Navbar() {
 
                         <div className="searchinput d-flex">
                             <input className="searchbar form-control" type="search" placeholder="Search" aria-label="Search" onChange={e => setSearchData(e.target.value)} />
-                            {/* <div onClick={FinalSearchData}> */}
-                                <Link button className="searchbutton btn btn-outline-dark" to={`/search/${searchData}`}>Search</Link>
+                            {/* <div onClick={myStore.dispatch({type:'SEARCH_DATA', data:searchData})}> */}
+                                {/* <Link button className="searchbutton btn btn-outline-dark" onClick={myStore.dispatch({type:'SEARCH_DATA', data:searchData})} to={`/search/${searchData}`}>Search</Link> */}
                             {/* </div> */}
+                            <button className="searchbutton btn btn-outline-dark" onClick={()=>myStore.dispatch({type:'SEARCH_DATA', data:searchData})}>Search</button>
                         </div>
 
 

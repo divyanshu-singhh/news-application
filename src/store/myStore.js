@@ -12,7 +12,7 @@ const promiseMiddleware = (store) => (next) => (action) => {
 
 export const AppState = () => {
     return (
-        {search:'' }
+        {searchData:'' }
         );
 }
 

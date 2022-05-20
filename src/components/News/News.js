@@ -4,59 +4,16 @@ import Highlight from '../Highlight/Highlight';
 import FetchApiData from '../../api/api';
 import Loader from '../Loader/Loader'
 import './News.css'
-
-// function News(props) {
-
-//     const [data, setData] = useState([]);
-
-//     const newsData = () => {
-//         FetchApiData(props.api).then((data)=>{
-//             setData(data.articles);
-//         });
-//     }
-    
-
-
-//     useEffect(() => {
-//         data.length==0?<Loader/>:''
-//         newsData();
-//     }, [])
-
-//     return (
-//         <div>
-//             {!data?<Loader/>:''}
-
-//             <Highlight data={data} />
-
-//             <h3>Latest News</h3>
-
-//             <div className="container">
-
-//                 <div className="row">
-
-
-//                     {data ? data.map((news, ind) => (
-//                         <>
-//                             <div className="col-md-4">
-//                                 <NewsArticle data={news} key={ind} />
-//                             </div>
-//                         </>
-//                     ))
-//                         : "Loading..."}
-
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default News;
-
 export default class News extends Component {
     constructor(props){
         super(props);
         this.state={data:{}}
         this.newsData = this.newsData.bind(this);
+    }
+
+    componentWillReceiveProps(nextProps){
+        let api =`https://newsapi.org/v2/everything?q=${nextProps.searchData}&apiKey=34a5877b5d4244069c551275a34b93b7`;
+        this.newsData(api);
     }
     componentDidMount(){
         let searchData = window.location.href.split('search/')[1];

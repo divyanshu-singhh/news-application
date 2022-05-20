@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import News from "../components/News/News"
+// import News from "../components/News/News"
+import News from '../components/News/NewsContainer'
 export default function Routes(){
 // var searchData = window.location.href.split('search/')[1];
 // // let apiData = `https://newsapi.org/v2/everything?q=${searchData}&apiKey=34a5877b5d4244069c551275a34b93b7`;
